@@ -1,15 +1,11 @@
 package com.todolist.tests;
 
 import com.todolist.pageobjects.DetailTaskPage;
-import com.todolist.pageobjects.shared.DatePicker;
 import com.todolist.pageobjects.shared.ModalDialog;
-import com.todolist.pageobjects.shared.TimerModal;
 import io.qameta.allure.Step;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.todolist.pageobjects.HomePage;
-
-import java.text.ParseException;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 

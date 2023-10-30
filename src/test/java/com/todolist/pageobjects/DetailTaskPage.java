@@ -3,7 +3,6 @@ package com.todolist.pageobjects;
 import com.todolist.pageobjects.shared.DatePicker;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.android.AndroidDriver;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import com.todolist.pageobjects.shared.TimerModal;
@@ -14,16 +13,13 @@ import java.util.ArrayList;
 
 public class DetailTaskPage extends BasePage {
 
-    private By TXT_ENTER_TASK = AppiumBy.id("com.splendapps.splendo:id/edtTaskName");
-    private By DTP_DUE_DATE = AppiumBy.id("com.splendapps.splendo:id/btnSetD");
-    private By TMR_DUE_TIME = AppiumBy.id("com.splendapps.splendo:id/btnSetT");
-    private By DDL_REPEAT = AppiumBy.id("com.splendapps.splendo:id/spinnerRepeat");
-    private By DDL_ADD_TO_LIST = AppiumBy.id("com.splendapps.splendo:id/spinnerLists");
-    private By BTN_SAVE_TASK = AppiumBy.id("com.splendapps.splendo:id/fabSaveTask");
-    private By ICON_DELETE = AppiumBy.ByAndroidUIAutomator.androidUIAutomator("new UiSelector().resourceId(\"com.splendapps.splendo:id/action_delete_task\")");
-
-
-
+    private final By TXT_ENTER_TASK = AppiumBy.id("com.splendapps.splendo:id/edtTaskName");
+    private final By DTP_DUE_DATE = AppiumBy.id("com.splendapps.splendo:id/btnSetD");
+    private final By TMR_DUE_TIME = AppiumBy.id("com.splendapps.splendo:id/btnSetT");
+    private final By DDL_REPEAT = AppiumBy.id("com.splendapps.splendo:id/spinnerRepeat");
+    private final By DDL_ADD_TO_LIST = AppiumBy.id("com.splendapps.splendo:id/spinnerLists");
+    private final By BTN_SAVE_TASK = AppiumBy.id("com.splendapps.splendo:id/fabSaveTask");
+    private final By ICON_DELETE = AppiumBy.ByAndroidUIAutomator.androidUIAutomator("new UiSelector().resourceId(\"com.splendapps.splendo:id/action_delete_task\")");
 
     public DetailTaskPage(AppiumDriver driver) {
         super(driver);

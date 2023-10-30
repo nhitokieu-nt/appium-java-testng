@@ -1,7 +1,6 @@
 package com.todolist.tests;
 
 import com.todolist.driver.BrowserFactory;
-//import com.todolist.utils.PropertiesFileUtils;
 import com.todolist.utils.PropertiesFileUtils;
 import io.appium.java_client.AppiumDriver;
 import io.qameta.allure.Step;

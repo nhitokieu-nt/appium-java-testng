@@ -7,13 +7,13 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 public class HomePage extends  BasePage {
-    private By BTN_ADD_TASK = AppiumBy.id("com.splendapps.splendo:id/fabAddTask");
-    private By LBL_TASK_NAME = AppiumBy.ByAndroidUIAutomator.androidUIAutomator("new UiSelector().resourceId(\"com.splendapps.splendo:id/task_name\")");
-    private By LBL_TASK_LIST_NAME = AppiumBy.ByAndroidUIAutomator.androidUIAutomator("new UiSelector().resourceId(\"com.splendapps.splendo:id/task_list_name\")");
-    private By LBL_TASK_DATETIME = AppiumBy.ByAndroidUIAutomator.androidUIAutomator("new UiSelector().resourceId(\"com.splendapps.splendo:id/task_due\")");
-    private By ITEM_TASK = AppiumBy.ByAndroidUIAutomator.androidUIAutomator("new UiSelector().resourceId(\"com.splendapps.splendo:id/task_list_item\")");
-    private By IMG_EMPTY = AppiumBy.ByAndroidUIAutomator.androidUIAutomator("new UiSelector().resourceId(\"com.splendapps.splendo:id/ivEmpty\")");
-    private By LBL_EMPTY = AppiumBy.ByAndroidUIAutomator.androidUIAutomator("new UiSelector().resourceId(\"com.splendapps.splendo:id/tvEmpty\")");
+    private final By BTN_ADD_TASK = AppiumBy.id("com.splendapps.splendo:id/fabAddTask");
+    private final By LBL_TASK_NAME = AppiumBy.ByAndroidUIAutomator.androidUIAutomator("new UiSelector().resourceId(\"com.splendapps.splendo:id/task_name\")");
+    private final By LBL_TASK_LIST_NAME = AppiumBy.ByAndroidUIAutomator.androidUIAutomator("new UiSelector().resourceId(\"com.splendapps.splendo:id/task_list_name\")");
+    private final By LBL_TASK_DATETIME = AppiumBy.ByAndroidUIAutomator.androidUIAutomator("new UiSelector().resourceId(\"com.splendapps.splendo:id/task_due\")");
+    private final By ITEM_TASK = AppiumBy.ByAndroidUIAutomator.androidUIAutomator("new UiSelector().resourceId(\"com.splendapps.splendo:id/task_list_item\")");
+    private final By IMG_EMPTY = AppiumBy.ByAndroidUIAutomator.androidUIAutomator("new UiSelector().resourceId(\"com.splendapps.splendo:id/ivEmpty\")");
+    private final By LBL_EMPTY = AppiumBy.ByAndroidUIAutomator.androidUIAutomator("new UiSelector().resourceId(\"com.splendapps.splendo:id/tvEmpty\")");
 
     public HomePage(AppiumDriver driver) {
         super(driver);
@@ -49,4 +49,3 @@ public class HomePage extends  BasePage {
         return isElementDisplayed(LBL_EMPTY);
     }
 }
-

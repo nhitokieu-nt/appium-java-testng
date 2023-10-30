@@ -2,7 +2,6 @@ package com.todolist.pageobjects.shared;
 
 import com.todolist.pageobjects.BasePage;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.android.AndroidDriver;
 import io.qameta.allure.Step;
 
 public class ModalDialog extends BasePage {

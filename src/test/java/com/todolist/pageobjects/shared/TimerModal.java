@@ -9,8 +9,8 @@ import io.qameta.allure.Step;
 import java.text.ParseException;
 
 public class TimerModal extends BasePage {
-    private static Pair<String, String> LBL_HOUR = Pair.of("accessibilityId", "%s");
-    private static Pair<String, String> LBL_MINUTE = Pair.of("accessibilityId", "%s");
+    private static final Pair<String, String> LBL_HOUR = Pair.of("accessibilityId", "%s");
+    private static final Pair<String, String> LBL_MINUTE = Pair.of("accessibilityId", "%s");
 
     public TimerModal(AppiumDriver driver) {
         super(driver);

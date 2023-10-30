@@ -11,15 +11,15 @@ import com.todolist.utils.Pair;
 import java.text.ParseException;
 
 public class DatePicker extends BasePage {
-    private By LBL_YEAR = AppiumBy.id("android:id/date_picker_header_year");
-    private Pair<String, String> SPN_TARGET_YEAR = Pair.of("uiAutomator", "%s");
+    private final By LBL_YEAR = AppiumBy.id("android:id/date_picker_header_year");
+    private final Pair<String, String> SPN_TARGET_YEAR = Pair.of("uiAutomator", "%s");
 
-    private By LBL_MONTH_DAY = AppiumBy.id("android:id/date_picker_header_date");
-    private Pair<String, String> LBL_DAY = Pair.of("accessibilityId", "%s") ;
+    private final By LBL_MONTH_DAY = AppiumBy.id("android:id/date_picker_header_date");
+    private final Pair<String, String> LBL_DAY = Pair.of("accessibilityId", "%s") ;
 
-    private By BTN_NEXT = AppiumBy.id("android:id/next");
+    private final By BTN_NEXT = AppiumBy.id("android:id/next");
 
-    private By BTN_PREVIOUS = AppiumBy.id("android:id/prev");
+    private final By BTN_PREVIOUS = AppiumBy.id("android:id/prev");
 
 
     public DatePicker(AppiumDriver driver) {
