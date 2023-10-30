@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ToDoListTestSuite">
+    <test name="CreateTaskTest">
+        <classes>
+            <class name="com.todolist.tests.CreateTaskTest">
+                <methods>
+                    <include name="createTaskTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="EditTaskTest">
+        <classes>
+            <class name="com.todolist.tests.EditTaskTest">
+                <methods>
+                    <include name="editTaskTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="DeleteTaskTest">
+        <classes>
+            <class name="com.todolist.tests.DeleteTaskTest">
+                <methods>
+                    <include name="deleteTaskTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
